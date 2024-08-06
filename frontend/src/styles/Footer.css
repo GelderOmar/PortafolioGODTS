@@ -1,0 +1,23 @@
+/* Footer.css */
+
+.footer {
+  background: var(--section-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -4px 8px var(--shadow-color);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0.5rem; /* Reducir padding en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0.5rem; /* Aún más reducido en pantallas muy pequeñas */
+  }
+}

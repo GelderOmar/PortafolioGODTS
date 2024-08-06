@@ -1,0 +1,115 @@
+/* Projects.css */
+
+.projects {
+  height: auto; /* Cambiar a auto para ajustarse al contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: transparent; /* Fondo completamente transparente */
+  padding: 5rem; /* Espaciado alrededor del contenido */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
+  gap: 2rem; /* Espaciado entre las tarjetas */
+  justify-content: center;
+  width: 100%; /* Ancho completo */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.project-card {
+  background-color: var(--bg-hero);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+  max-width: 300px; /* Ancho máximo de las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajustar la imagen sin deformar */
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem; /* Tamaño del nombre del proyecto */
+}
+
+.project-info p {
+  font-size: 1rem; /* Tamaño de la descripción */
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color); /* Cambia esto por el color que desees */
+  transition: color 0.3s;
+}
+
+.project-icon:hover {
+  color: var(--hover-color); /* Cambia esto por el color al pasar el ratón */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem; /* Reducir padding en pantallas pequeñas */
+  }
+
+  .project-card {
+    max-width: 100%; /* Ancho completo en pantallas pequeñas */
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-info p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 2rem; /* Aún más reducido en pantallas muy pequeñas */
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+
+  .project-info p {
+    font-size: 0.75rem;
+  }
+}

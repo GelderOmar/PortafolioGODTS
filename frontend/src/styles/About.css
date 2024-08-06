@@ -1,0 +1,29 @@
+/* About.css */
+
+.about {
+  padding: 5rem;
+  height: 80vh; /* Cambiar a 80vh para ocupar un poco menos de altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el contenido verticalmente */
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem;
+    height: auto; /* Ajustar la altura a auto en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 2rem;
+    height: auto; /* Ajustar la altura a auto en pantallas muy pequeñas */
+  }
+}

@@ -1,0 +1,98 @@
+.skills {
+  height: auto; /* Cambiar a auto para ajustarse al contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center;
+  background-color: transparent; /* Fondo completamente transparente */
+  border: none; /* Sin bordes */
+  box-shadow: none; /* Sin sombra */
+  padding: 5rem; /* Espaciado alrededor del contenido */
+  animation: slideIn 1s ease-in-out; /* Animación de entrada */
+}
+
+.skills h2 {
+  margin-bottom: 2rem; /* Espaciado inferior para el título */
+  font-size: 2rem; /* Tamaño de fuente del título */
+}
+
+.skills-list,
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los ítems se envuelvan en varias líneas */
+  gap: 1.5rem; /* Espaciado entre ítems */
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin padding por defecto */
+  margin: 0; /* Sin margin por defecto */
+  width: 100%; /* Asegura que la lista ocupe el ancho disponible */
+  max-width: 800px; /* Máximo ancho de la lista */
+  justify-content: center; /* Centra los ítems dentro de la lista */
+}
+
+.skills-item,
+.hobbies-item {
+  display: flex;
+  flex-direction: column; /* Colocar ícono y nombre en columna */
+  align-items: center; /* Alineación vertical centrada */
+  background-color: var(--bg-hero); /* Color de fondo de los ítems */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+  max-width: 150px; /* Ancho máximo en pantallas pequeñas */
+}
+
+.skills-item:hover,
+.hobbies-item:hover {
+  transform: translateY(-10px); /* Levantar la tarjeta al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.skill-card,
+.hobby-card {
+  display: flex;
+  flex-direction: column; /* Asegura que el ícono y el nombre estén en columna */
+  align-items: center; /* Centra el contenido */
+}
+
+.skill-card span,
+.hobby-card span {
+  font-size: 1rem; /* Tamaño del texto del nombre */
+}
+
+.icon-size {
+  font-size: 3rem; /* Ajusta el tamaño del ícono aquí */
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .skills {
+    padding: 3rem; /* Reducir padding en pantallas pequeñas */
+  }
+
+  .skills h2 {
+    font-size: 1.5rem;
+  }
+
+  .icon-size {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 2rem; /* Aún más reducido en pantallas muy pequeñas */
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+
+  .skills h2 {
+    font-size: 1.25rem;
+  }
+
+  .icon-size {
+    font-size: 2rem;
+  }
+}

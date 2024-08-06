@@ -1,0 +1,117 @@
+.hero {
+  background-color: transparent; /* Fondo completamente transparente */
+  border: none; /* Sin bordes */
+  box-shadow: none; /* Sin sombra */
+  background-image: url('/public/images/img3.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+  background-position: center;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  position: relative;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+  border-radius: 10px;
+}
+
+.hero .typing-text {
+  font-size: 3.5rem; /* Tamaño de fuente por defecto */
+  margin-bottom: 20px;
+  white-space: nowrap; /* Para que el texto no se divida en líneas */
+  border-right: 0.15em solid orange; /* Cursor de texto */
+  animation: blink-caret 0.75s step-end infinite; /* Parpadeo del cursor */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+.hero h1 {
+  color: aliceblue; /* Color del texto */
+  font-smooth: always; /* Suavizado de texto */
+  -webkit-font-smoothing: antialiased; /* Suavizado de texto para navegadores basados en WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado de texto para navegadores basados en Gecko */
+  text-shadow: 
+    0 0 5px black, /* Sombra cercana */
+    0 0 10px black, /* Sombra un poco más distante */
+    0 0 15px black, /* Sombra aún más distante */
+    0 0 20px black, /* Sombra más distante */
+    0 0 25px black; /* Sombra más lejana para efecto neón */
+  font-size: 4rem; /* Tamaño de fuente por defecto */
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  color: aliceblue; /* Color del texto */
+  font-smooth: always; /* Suavizado de texto */
+  -webkit-font-smoothing: antialiased; /* Suavizado de texto para navegadores basados en WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado de texto para navegadores basados en Gecko */
+  text-shadow: 
+    0 0 5px black, /* Sombra cercana */
+    0 0 10px black, /* Sombra un poco más distante */
+    0 0 15px black, /* Sombra aún más distante */
+    0 0 20px black, /* Sombra más distante */
+    0 0 25px black; /* Sombra más lejana para efecto neón */
+  font-size: 1.75rem; /* Tamaño de fuente por defecto */
+  margin: 0.5rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero .typing-text {
+    font-size: 2.5rem; /* Tamaño de fuente reducido en pantallas medianas */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Tamaño de fuente reducido en pantallas medianas */
+  }
+
+  .hero p {
+    font-size: 1.5rem; /* Tamaño de fuente reducido en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero .typing-text {
+    font-size: 2rem; /* Tamaño de fuente reducido en pantallas pequeñas */
+  }
+
+  .hero h1 {
+    font-size: 1.75rem; /* Tamaño de fuente reducido en pantallas pequeñas */
+  }
+
+  .hero p {
+    font-size: 1.25rem; /* Tamaño de fuente reducido en pantallas pequeñas */
+  }
+}

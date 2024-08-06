@@ -1,0 +1,111 @@
+/* Contact.css */
+
+.contact {
+  padding: 10rem;
+  animation: slideIn 1s ease-in-out;
+  justify-content: flex-start;
+  background-color: transparent; /* Fondo completamente transparente */
+  border: none; /* Sin bordes */
+  box-shadow: none; /* Sin sombra */
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Asegura la disposición vertical */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column; /* Disposición en columna */
+  gap: 1rem; /* Espaciado entre los campos del formulario */
+  width: 100%;
+  max-width: 600px; /* Máximo ancho del formulario */
+}
+
+.contact label {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact button {
+  background-color: var(--bg-hero);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: var(--text-hero);
+  color: var(--bg-hero);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .contact {
+    padding: 5rem; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  .contact form {
+    padding: 1rem; /* Agregar padding interno para mayor separación */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 3rem; /* Aún más reducido en pantallas muy pequeñas */
+  }
+
+  .contact button {
+    padding: 0.4rem 0.8rem; /* Ajustar el padding del botón */
+  }
+}
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* color de LinkedIn */
+}
+
+.social-icons a:nth-child(2):hover {
+  color: #ee9828; /* color de GitHub */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 30px;
+  }
+  .social-icons a svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 20px;
+  }
+  .social-icons a svg {
+    width: 30px;
+    height: 30px;
+  }
+}

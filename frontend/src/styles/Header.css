@@ -1,0 +1,83 @@
+.header {
+  background: var(--header-bg);
+  color: var(--text-color);
+  padding: 0.3rem 2rem;
+  border-bottom: 0.5px solid var(--header-border);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer; /* Asegura que el cursor sea una flecha */
+}
+
+.nav-links .active {
+  font-weight: bold;
+  color: orange; /* Cambia el color para el estado activo */
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color); /* Asegura que el color del botón se ajuste al tema */
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: var(--button-bg); /* Cambia el color del botón al pasar el ratón por encima */
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color); /* Asegura que el color del botón se ajuste al tema */
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--button-bg); /* Cambia el color del botón al pasar el ratón por encima */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--header-bg);
+    width: 100%;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
