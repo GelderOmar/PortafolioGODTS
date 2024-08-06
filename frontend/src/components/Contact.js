@@ -19,14 +19,19 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:5000/send', { // Cambia esto a la URL de tu backend local durante el desarrollo
+    fetch('https://portafoliogodts.onrender.com/send', { // Cambia esto a la URL de tu backend en Render
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(formData)
     })
-      .then((response) => response.text())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
       .then((data) => {
         alert('Message sent successfully!');
         // Limpiar los campos del formulario
