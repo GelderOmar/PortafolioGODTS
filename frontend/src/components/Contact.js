@@ -66,10 +66,10 @@ const Contact = () => {
         <button type="submit">Send</button>
       </form>
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/tu-perfil-linkedin" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/gelder-omar-ts" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={50} />
         </a>
-        <a href="https://github.com/tu-usuario-github" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/GelderOmar" target="_blank" rel="noopener noreferrer">
           <FaGithub size={50} />
         </a>
       </div>
