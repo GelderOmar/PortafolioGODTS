@@ -4,6 +4,13 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+    name: 'CRUD BASICO',
+    description: 'Aplicación web CRUD. Tecnologías utilizadas: React,  Node.js, Express, MongoDB Atlas, Mongoose, Vercel, Render',
+    image: '/images/p4.png',
+    github: 'https://github.com/GelderOmar/registroPV',
+    website: 'https://registro-pv.vercel.app/'
+  },
+  {
     name: 'SpaceApp',
     description: 'Aplicación web diseñada para explorar imágenes astronómicas proporcionadas por la NASA. La aplicación utiliza la API REST "Astronomy Picture of the Day" (APOD) de la NASA para mostrar una galería dinámica de imágenes del espacio, con descripciones y títulos detallados para cada una. Los usuarios pueden buscar imágenes específicas mediante un campo de búsqueda integrado, facilitando la exploración de contenido astronómico relevante.',
     image: '/images/p1.png',
