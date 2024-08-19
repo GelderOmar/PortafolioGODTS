@@ -13,7 +13,7 @@ const About = () => {
 
       {/* Nueva sección de certificaciones */}
       <div className="mt-6">
-        <h2 className="text-xl font-bold">Certificaciones Oracle Next Education:</h2>
+        <h2 className="text-xl font-bold">Certificaciones Oracle Next Education</h2>
         <a href="https://app.aluracursos.com/user/gelderomarts/fullCertificate/a8bc41efd40d344e93ac0fd6f769cb7d" target="_blank" rel="noopener noreferrer">
           <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
             Ver Certificación
