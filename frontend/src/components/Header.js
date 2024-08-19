@@ -25,7 +25,7 @@ const Header = ({ currentSection }) => {
               duration={500}
               className={currentSection === 'home' ? 'active' : ''}
             >
-              Home
+              Inicio
             </Link>
           </li>
           <li>
@@ -55,7 +55,7 @@ const Header = ({ currentSection }) => {
               duration={500}
               className={currentSection === 'projects' ? 'active' : ''}
             >
-              Projects
+              Proyectos
             </Link>
           </li>
           <li>
@@ -65,7 +65,7 @@ const Header = ({ currentSection }) => {
               duration={500}
               className={currentSection === 'contact' ? 'active' : ''}
             >
-              Contact
+              Contacto
             </Link>
           </li>
         </ul>

@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
-    name: 'CRUD BASICO',
+    name: 'CRUD',
     description: 'Aplicación web CRUD. Tecnologías utilizadas: React,  Node.js, Express, MongoDB Atlas, Mongoose, Vercel, Render',
     image: '/images/p4.png',
     github: 'https://github.com/GelderOmar/registroPV',
@@ -36,7 +36,7 @@ const projects = [
 const Projects = () => {
   return (
     <section className="projects">
-      <h2>My Projects</h2>
+      <h2>Proyectos</h2>
       <div className="projects-container">
         {projects.map((project) => (
           <div key={project.name} className="project-card">

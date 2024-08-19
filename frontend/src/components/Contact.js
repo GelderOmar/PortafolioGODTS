@@ -49,21 +49,21 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <h2>Contact</h2>
+      <h2>Contacto</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Name:
+          Nombre:
           <input type="text" name="name" value={formData.name} onChange={handleChange} />
         </label>
         <label>
-          Email:
+          Correo:
           <input type="email" name="email" value={formData.email} onChange={handleChange} />
         </label>
         <label>
-          Message:
+          Mensaje:
           <textarea name="message" value={formData.message} onChange={handleChange} />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit">Enviar</button>
       </form>
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/gelder-omar-ts" target="_blank" rel="noopener noreferrer">
